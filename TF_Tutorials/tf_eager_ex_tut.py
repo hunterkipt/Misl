@@ -105,7 +105,39 @@ def main():
    axes[1].plot(train_accuracy_results)
 
    plt.show()
+   
+   # Test the model
+   test_url = "http://download.tensorflow.org/data/iris_test.csv"
+   test_fp = tf.keras.utils.get_file(fname=os.path.basename(test_url),
+                                     origin=test_url)
+   
+   test_dataset = tf.data.TextLineDataset(test_fp)
+   test_dataset = test_dataset.skip(1)        # skip header row
+   test_dataset = test_dataset.map(parse_csv) # parse each row w/ prev func
+   test_dataset = test_dataset.shuffle(1000)  # randomize
+   test_dataset = test_dataset.batch(32)      # use the same batch size
 
+   test_accuracy = tfe.metrics.Accuracy()
+   for (x, y) in test_dataset:
+      prediction = tf.argmax(model(x), axis=1, output_type=tf.int32)
+      test_accuracy(prediction, y)
+
+   print("Test set accuracy: {:.3%}".format(test_accuracy.result()))
+
+   # Make predictions
+   class_ids = ["Iris setosa", "Iris versicolor", "Iris virginica"]
+   predict_dataset = tf.convert_to_tensor([
+      [5.1, 3.3, 1.7, 0.5,],
+      [5.9, 3.0, 4.2, 1.5,],
+      [6.9, 3.1, 5.4, 2.1]
+   ])
+   
+   predictions = model(predict_dataset)
+
+   for i, logits in enumerate(predictions):
+      class_idx = tf.argmax(logits).numpy()
+      name = class_ids[class_idx]
+      print("Example {} prediction: {}".format(i, name))
 
 
 if __name__ == "__main__":
