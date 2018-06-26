@@ -13,59 +13,37 @@
 
 Testing Heading References - [Go Here](#check-me-out!)
 
+T
 
+e
 
+s
 
+t
 
+i
 
+n
 
+g
 
+s
 
+c
 
+r
 
+o
 
+l
 
+l
 
+i
 
+n
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+g
 
 Check me out!
 =============
