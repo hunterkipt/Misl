@@ -13,5 +13,5 @@
 
 Testing Heading References - [Go Here](# Check me out!)
 
-Check me out!
-=============
+# Check me out!
+
