@@ -11,7 +11,7 @@
 | Testing        | 123  |
 | More Tests     | 456  |
 
-Testing Heading References - [Go Here](#check-me-out)
+Testing Heading References - [Go Here](#example-notes)
 
 T
 
@@ -45,6 +45,7 @@ n
 
 g
 
-Check me out
+Example Notes
 =============
 
+***Note*** \nThis is important!
