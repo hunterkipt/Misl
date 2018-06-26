@@ -48,4 +48,5 @@ g
 Example Notes
 =============
 
-***Note*** \nThis is important!
+***Note***
+This is important!
