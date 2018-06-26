@@ -49,4 +49,4 @@ Example Notes
 =============
 
 ***Note***  
-  This is important!
+ <nbsp/>This is important!
