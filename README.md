@@ -11,7 +11,7 @@
 | Testing        | 123  |
 | More Tests     | 456  |
 
-Testing Heading References - [Go Here](#http://www.google.com)
+Testing Heading References - [Go Here](http://www.google.com)
 
 T
 
