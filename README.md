@@ -10,3 +10,8 @@
 |----------------|------|
 | Testing        | 123  |
 | More Tests     | 456  |
+
+Testing Heading References - [Go Here](# Check me out!)
+
+Check me out!
+=============
