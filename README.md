@@ -1,5 +1,3 @@
-# Misl
-
 Role-based access control 
 =========================
 
@@ -27,7 +25,7 @@ If an operation requires more than one access right then an identity can obtain
   those rights from multiple ACL entries.
 
 *Note*  
-AccessType.Denied`` takes precedence over ``AccessType.Allowed``. For example, a role that is assigned ``AccessType.Denied`` for
+``AccessType.Denied`` takes precedence over ``AccessType.Allowed``. For example, a role that is assigned ``AccessType.Denied`` for
   ``AccessRights.All`` will receive a ``forbidden`` for all  requests unless they are the owner of the entity.
 
 *Note*  
