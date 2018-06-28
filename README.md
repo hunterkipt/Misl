@@ -97,7 +97,6 @@ but denies Role 3 ManageAccessControl Access:
     	],
     	}
 
-|
 
 Owner
 -----
