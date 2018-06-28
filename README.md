@@ -67,8 +67,6 @@ but denies Role 3 ManageAccessControl Access:
 
   Sample  body:
 
-::
-
       HTTP/1.1 200
       Content-Type: application/json
 
@@ -117,8 +115,6 @@ The following code samples shows the format and structure of an owner object:
 
 **User Owner Body**
 
-::
-
     	"Owner": {
     		"Type": 1,
     		"TenantId": "55555555-5555-5555-5555-555555555555",
@@ -126,8 +122,6 @@ The following code samples shows the format and structure of an owner object:
     	},
 
 **Application Owner Body**
-
-::
 
     	"Owner": {
     		"Type": 2,
